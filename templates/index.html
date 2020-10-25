@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <meta charset="UTF-8">
+  <title>CORONA virtual test</title>
+  	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style1.css">
+
+
+		
+
+</head>
+
+<body>
+ <div class="login">
+	<h1>CORONA virtual test</h1>
+
+
+ <h2>   {{ prediction_text }}  </h2>
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+    	<select name="Fever" required="required">
+    		<option value="" disabled selected>Fever</option>
+			<option value="1">YES</option>
+		 	<option value="0">NO</option>
+		</select>
+		<select name="Tiredness" required="required">
+    		<option value="" disabled selected>Tiredness</option>
+			<option value="1">YES</option>
+		 	<option value="0">NO</option>
+		</select>
+		<select name="Dry-Cough" required="required">
+    		<option value="" disabled selected>Dry-Cough</option>
+			<option value="1">YES</option>
+		 	<option value="0">NO</option>
+		</select>
+		<select name="Difficulty-in-Breathing" required="required">
+    		<option value="" disabled selected>Difficulty-in-Breathing</option>
+			<option value="1">YES</option>
+		 	<option value="0">NO</option>
+		</select>
+		<select name="Sore-Throat" required="required">
+    		<option value="" disabled selected>Sore-Throat</option>
+			<option value="1">YES</option>
+		 	<option value="0">NO</option>
+		</select>
+		<select name="None_Sympton" required="required">
+    		<option value="" disabled selected>None_Sympton</option>
+			<option value="1">YES</option>
+		 	<option value="0">NO</option>
+		</select>
+		<select name="Pains" required="required">
+    		<option value="" disabled selected>Pains</option>
+			<option value="1">YES</option>
+		 	<option value="0">NO</option>
+		</select>
+		<select name="Nasal-Congestion" required="required">
+    		<option value="" disabled selected>Nasal-Congestion</option>
+			<option value="1">YES</option>
+		 	<option value="0">NO</option>
+		</select>
+		<select name="Runny-Nose" required="required">
+    		<option value="" disabled selected>Runny-Nose</option>
+			<option value="1">YES</option>
+		 	<option value="0">NO</option>
+		</select>
+		<select name="Diarrhea" required="required">
+    		<option value="" disabled selected>Diarrhea</option>
+			<option value="1">YES</option>
+		 	<option value="0">NO</option>
+		</select>
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">CORONA VIRTUAL TEST</button>
+    </form>
+
+   <br>
+   <br>
+
+
+ </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+     
+ 
+
